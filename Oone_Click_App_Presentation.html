@@ -426,17 +426,13 @@ html,body{margin:0;height:100%;overflow:hidden;background:#0B0A1A}
 .code-acts{display:flex;gap:10px}
 .code-box pre{margin:0;padding:18px;border-radius:14px;background:#0B0A1A;border:1px solid var(--pb);color:#A5F3FC;font:500 14px/1.6 'JetBrains Mono';overflow-x:auto}
 
-/* Slide 9 Thank You + Support Cards */
-.ty-wrap{position:absolute;inset:0;display:grid;grid-template-columns:1fr 590px;align-items:center;padding:80px 110px 140px;gap:60px;z-index:2}
-.ty-main .logo{width:190px;height:86px}
-.ty-main h1{margin:20px 0 0;font-size:124px;line-height:1;font-weight:700;letter-spacing:-.04em}
-.deck[data-lang="km"] .ty-main h1{font-size:108px;line-height:1.25}
-.ty-main p{margin:20px 0 0;font-size:24px;color:var(--mu)}
-.ty-card{padding:32px;display:flex;flex-direction:column;gap:16px}
-.sup-row{display:flex;align-items:flex-start;gap:14px;padding:12px 14px;border-radius:14px;background:var(--panel2);border:1px solid var(--pb)}
-.sup-row .ic{width:42px;height:42px;border-radius:11px}.sup-row .ic svg{width:20px;height:20px}
-.sup-row b{display:block;font-size:15px}
-.sup-row small{display:block;font-size:13.5px;color:var(--mu);line-height:1.45;margin-top:2px}
+/* Slide 8 Thank You */
+.ty-wrap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px 110px 300px;text-align:center;z-index:2}
+.ty-main{display:flex;flex-direction:column;align-items:center}
+.ty-main .logo{width:210px;height:94px}
+.ty-main h1{margin:22px 0 0;font-size:128px;line-height:1;font-weight:700;letter-spacing:-.04em}
+.deck[data-lang="km"] .ty-main h1{font-size:116px;line-height:1.25}
+.ty-main .cta-row{justify-content:center;margin-top:28px}
 .pl{position:absolute;left:0;right:0;bottom:0;height:360px;z-index:1;pointer-events:none}
 .pl .sm-rail{fill:none;stroke:var(--pb);stroke-width:2;stroke-linecap:round}
 .pl .sm-wave{fill:none;stroke:var(--pri);stroke-width:1.4;opacity:.22}
@@ -533,7 +529,6 @@ html,body{margin:0;height:100%;overflow:hidden;background:#0B0A1A}
     <div class="t-meta a" style="--d:5"><span class="logo" role="img" aria-label="OONE Power Technology"></span><div><small>Prepared by</small><b>OONE Power Technology Co., Ltd</b></div></div>
   </div>
   <div class="hero-showcase a-z" style="--d:2">
-    <div class="float" style="left:-26px;top:86px"><span class="in"><span style="display:flex;align-items:center;gap:14px"><span class="ic cy"><i data-i="layers"></i></span><span><span>3-System Pipeline</span><small>Synced in real time</small></span></span></span></div>
     <div class="float" style="right:-34px;top:340px"><span class="in" style="animation-delay:-1.5s"><span style="display:flex;align-items:center;gap:14px"><span class="ic grn"><i data-i="bar"></i></span><span><span>TOU Interval Data</span><small>Import / Export Wh &amp; varh</small></span></span></span></div>
     <div class="float" style="left:-18px;bottom:86px"><span class="in" style="animation-delay:-3s"><span style="display:flex;align-items:center;gap:14px"><span class="ic amb"><i data-i="grid"></i></span><span><span>Field Menu Path</span><small>Other Functions › OMMD</small></span></span></span></div>
     <div class="hero-glow-card">
@@ -554,7 +549,6 @@ html,body{margin:0;height:100%;overflow:hidden;background:#0B0A1A}
   <div class="head">
     <div class="eyebrow a">01 &middot; User guide overview</div>
     <h2 class="h a" style="--d:1" data-kh="ប្រតិបត្តិការសំខាន់ៗ <span class=&quot;g&quot;>ទាំង ៤ ក្នុង OMMD</span>">Four essential <span class="g">OMMD operations</span></h2>
-    <p class="lead a" style="--d:2" data-kh="ចុចលើកាតណាមួយខាងក្រោម ដើម្បីមើលជំហានប្រតិបត្តិការលម្អិតលើទូរស័ព្ទ។">Select any workflow card below to inspect the animated mobile steps.</p>
   </div>
   <div class="ov-grid">
     <div class="ov-left">
@@ -591,7 +585,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#0B0A1A}
       <button class="lcs wf-step" data-s="1" data-n="Choose OMMD Action"><span class="lcn">2</span><span class="lcb"><b>Step 2 &middot; Choose OMMD Action</b><small>Pick your meter workflow inside the OMMD section of Other Functions.</small></span></button>
     </div>
     <div class="wf-note" style="flex-direction:column;align-items:stretch;gap:6px">
-      <div style="display:flex;align-items:center;gap:12px"><span class="ic soft"><i data-i="grid"></i></span><div><b>Real PDF Screen Switcher</b><small>Tap any OMMD option below to inspect its real screen:</small></div></div>
+      <div style="display:flex;align-items:center;gap:12px"><span class="ic soft"><i data-i="grid"></i></span><div><b>OMMD Menu Preview</b><small>Select any OMMD option below to view its mobile screen:</small></div></div>
       <div class="entry-pills" id="entrySwitch">
         <button type="button" class="entry-pill on" data-shot="lp"><i data-i="bar"></i><span data-kh="ត្រួតពិនិត្យ Load Profile">View Load Profile</span></button>
         <button type="button" class="entry-pill" data-shot="vf"><i data-i="shield"></i><span>Verify Device</span></button>
@@ -914,16 +908,9 @@ html,body{margin:0;height:100%;overflow:hidden;background:#0B0A1A}
     <div class="ty-main">
       <span class="logo a" style="--d:0" role="img" aria-label="OONE Power Technology"></span>
       <h1 class="a" style="--d:1"><span class="grad">Thank you</span></h1>
-      <p class="a" style="--d:2">Oone Click App &middot; OMMD Meter Operations Guide (V.2.2.12)</p>
-      <div class="cta-row a" style="--d:3">
+      <div class="cta-row a" style="--d:2">
         <button class="cta" data-go="0"><i data-i="refresh"></i><span>Back to start</span></button>
       </div>
-    </div>
-    <div class="card ty-card a-r" style="--d:2">
-      <div style="display:flex;justify-content:space-between;align-items:center"><span class="tag">Oone Click App V.2.2.12</span><b>Contact Support</b></div>
-      <div class="sup-row"><span class="ic"><i data-i="phone"></i></span><div><b>Technical Hotline</b><small>(+855) 10 998 012 &middot; 86 998 012 &middot; 89 867 012 &middot; 71 870 2004</small></div></div>
-      <div class="sup-row"><span class="ic cy"><i data-i="mail"></i></span><div><b>Email &amp; Social</b><small>tech-advisor@oone.bz &middot; Facebook: Oone Power Technology</small></div></div>
-      <div class="sup-row"><span class="ic grn"><i data-i="map"></i></span><div><b>Address</b><small data-kh="<span class=&quot;nw&quot;>ផ្ទះលេខ ៩៩៧, ជាន់ទី៤, ផ្លូវបេតុង, ក្រុមទី៤, ភូមិប្រេស,</span> <span class=&quot;nw&quot;>សង្កាត់គោកឃ្លាង, ខណ្ឌសែនសុខ, រាជធានីភ្នំពេញ</span>">#997, 4th Floor, Concrete St., Group 4, Phum Pres, Sangkat Kork Khleang, Khan Sen Sok, Phnom Penh</small><small>012 990 973 / 098 587 666</small></div></div>
     </div>
   </div>
 </div></section>
@@ -1010,7 +997,7 @@ const svg=n=>'<svg class="lu" viewBox="0 0 24 24" aria-hidden="true">'+(P[n]||''
 document.querySelectorAll('i[data-i]').forEach(e=>e.innerHTML=svg(e.dataset.i));
 const KH = {
   "Title": "ចំណងជើង",
-  "Overview": "ទិដ្ឋភាពទូទៅ",
+  "Overview": "មាតិកា",
   "App entry": "ការចូលកម្មវិធី",
   "Load Profile": "Load Profile",
   "Verify": "ផ្ទៀងផ្ទាត់",
@@ -1042,7 +1029,7 @@ const KH = {
   "Import / Export Wh & varh": "ថាមពល Import / Export Wh & varh",
   "Field Menu Path": "ទីតាំងម៉ឺនុយ",
   "Other Functions › OMMD": "មុខងារផ្សេងៗ › OMMD",
-  "01 · User guide overview": "០១ · ទិដ្ឋភាពទូទៅនៃសៀវភៅណែនាំ",
+  "01 · User guide overview": "០១ · មាតិកា",
   "Check Load Profile": "ត្រួតពិនិត្យ Load Profile",
   "Query monthly/hourly TOU meter consumption readings.": "ស្វែងរកទិន្នន័យប្រើប្រាស់ថាមពលប្រចាំម៉ោង TOU",
   "Verify Device": "ផ្ទៀងផ្ទាត់ឧបករណ៍",
@@ -1123,8 +1110,8 @@ const KH = {
   "Submit query form to fetch hourly TOU readings from OMMD.": "ចុចប៊ូតុងពណ៌ខៀវ «ស្វែងរក» ដើម្បីទាញទិន្នន័យប្រចាំម៉ោង។",
   "Inspect TOU records": "ពិនិត្យទិន្នន័យ TOU",
   "Review 15:00 – 12:00 cards for Import/Export Wh & varh.": "ពិនិត្យតម្លៃ Import/Export Wh & varh ម៉ោង 15:00 – 12:00។",
-  "Real PDF Screen Switcher": "ប្តូររូបភាពម៉ឺនុយ PDF ពិត",
-  "Tap any OMMD option below to inspect its real screen:": "ចុចជ្រើសមុខងារ OMMD ខាងក្រោម ដើម្បីមើលរូបភាពពិត៖",
+  "OMMD Menu Preview": "ជ្រើសមុខងារក្នុងម៉ឺនុយ OMMD",
+  "Select any OMMD option below to view its mobile screen:": "ចុចជ្រើសមុខងារខាងក្រោម ដើម្បីបង្ហាញលើអេក្រង់ទូរស័ព្ទ៖",
   "04 · Module 02 · Verify Device": "០៤ · មុខងារ ០២ · ផ្ទៀងផ្ទាត់ឧបករណ៍",
   "Enter meter serial": "បញ្ចូលលេខស៊េរី",
   "Type or scan meter serial number (218261260).": "បញ្ចូល ឬស្កែនលេខស៊េរីនាឡិកាស្ទង់ (218261260)។",
@@ -1384,6 +1371,7 @@ const q=new URLSearchParams(location.search).get('lang');
 setLang(q==='en'?'en':'km');
 const h=parseInt(location.hash.slice(1));
 go(h>=1&&h<=N?h-1:0);
+addEventListener('hashchange',()=>{const nh=parseInt(location.hash.slice(1));if(nh>=1&&nh<=N)go(nh-1);});
 })();
 </script>
 </body>
