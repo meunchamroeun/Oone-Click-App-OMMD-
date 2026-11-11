@@ -427,38 +427,12 @@ html,body{margin:0;height:100%;overflow:hidden;background:#0B0A1A}
 .code-box pre{margin:0;padding:18px;border-radius:14px;background:#0B0A1A;border:1px solid var(--pb);color:#A5F3FC;font:500 14px/1.6 'JetBrains Mono';overflow-x:auto}
 
 /* Slide 8 Thank You */
-.ty-wrap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px 110px 300px;text-align:center;z-index:2}
+.ty-wrap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 110px 60px;text-align:center;z-index:2}
 .ty-main{display:flex;flex-direction:column;align-items:center}
-.ty-main .logo{width:210px;height:94px}
-.ty-main h1{margin:22px 0 0;font-size:128px;line-height:1;font-weight:700;letter-spacing:-.04em}
-.deck[data-lang="km"] .ty-main h1{font-size:116px;line-height:1.25}
-.ty-main .cta-row{justify-content:center;margin-top:28px}
-.pl{position:absolute;left:0;right:0;bottom:0;height:360px;z-index:1;pointer-events:none}
-.pl .sm-rail{fill:none;stroke:var(--pb);stroke-width:2;stroke-linecap:round}
-.pl .sm-wave{fill:none;stroke:var(--pri);stroke-width:1.4;opacity:.22}
-.pl .sm-pulse{fill:none;stroke:url(#smLineG);stroke-width:3;stroke-dasharray:56 540;stroke-linecap:round;opacity:0;transition:opacity .4s}
-.slide.on .pl .sm-pulse{opacity:1;animation:smFlow 3.2s linear infinite}
-.slide.on .pl .sm-pulse.d2{animation-delay:-1.05s}
-.slide.on .pl .sm-pulse.d3{animation-delay:-2.1s}
-.slide.on .pl .sm-pulse.d4{animation-delay:-2.35s}
-@keyframes smFlow{from{stroke-dashoffset:596}to{stroke-dashoffset:0}}
-.pl .sm-card{fill:var(--panel);fill-opacity:.98;stroke:var(--pb);stroke-width:1.5}
-.deck[data-theme="light"] .pl .sm-card{fill-opacity:.98}
-.pl .sm-subcard{fill:var(--panel2);stroke:var(--pb);stroke-width:1.2}
-.pl .sm-dot{fill:var(--cy)}
-.pl .sm-t{fill:var(--tx);font:700 18px 'Inter',sans-serif}
-.pl .sm-t-sm{fill:var(--tx);font:700 14.5px 'Inter',sans-serif}
-.pl .sm-sub{fill:var(--mu);font:500 12.5px 'Inter',sans-serif}
-.pl .sm-mono{fill:var(--mu);font:600 11.5px 'JetBrains Mono',monospace}
-.pl .sm-badge-pri{fill:var(--pri);fill-opacity:.14;stroke:var(--pri);stroke-opacity:.35;stroke-width:1}
-.pl .sm-badge-grn{fill:var(--grn);fill-opacity:.14;stroke:var(--grn);stroke-opacity:.38;stroke-width:1}
-.pl .sm-badge-cy{fill:var(--cy);fill-opacity:.14;stroke:var(--cy);stroke-opacity:.38;stroke-width:1}
-.pl .sm-tx-pri{fill:var(--pri);font:600 11px 'JetBrains Mono',monospace}
-.pl .sm-tx-grn{fill:var(--grn);font:700 11px 'Inter',sans-serif}
-.pl .sm-tx-cy{fill:var(--cy);font:700 11px 'Inter',sans-serif}
-.pl .sm-scene{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease) .35s,transform .7s var(--ease) .35s}
-.slide.on .pl .sm-scene{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.pl .sm-pulse{animation:none!important;stroke-dasharray:none;opacity:.55}}
+.ty-main .logo{width:230px;height:104px}
+.ty-main h1{margin:26px 0 0;font-size:136px;line-height:1;font-weight:700;letter-spacing:-.04em}
+.deck[data-lang="km"] .ty-main h1{font-size:124px;line-height:1.25}
+.ty-main .cta-row{justify-content:center;margin-top:34px}
 
 /* Step hint pill top-right */
 .axhint{position:absolute;right:110px;top:92px;display:flex;align-items:center;gap:8px;font-size:14.5px;color:var(--mu);z-index:4}
@@ -783,127 +757,6 @@ html,body{margin:0;height:100%;overflow:hidden;background:#0B0A1A}
 <section class="slide" data-label="Support">
 <div class="stage">
   <div class="bgfx"><div class="dots"></div><div class="blob b1"></div><div class="blob b2"></div></div>
-  <svg class="pl" viewBox="0 0 1920 360" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-    <defs>
-      <linearGradient id="smLineG" gradientUnits="userSpaceOnUse" x1="110" y1="0" x2="1810" y2="0">
-        <stop offset="0%" stop-color="#8B74FF"/>
-        <stop offset="52%" stop-color="#2DD4E6"/>
-        <stop offset="100%" stop-color="#34D399"/>
-      </linearGradient>
-      <linearGradient id="smFadeG" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1920" y2="0">
-        <stop offset="0%" stop-color="#8B74FF" stop-opacity="0"/>
-        <stop offset="12%" stop-color="#8B74FF" stop-opacity=".45"/>
-        <stop offset="50%" stop-color="#2DD4E6" stop-opacity=".5"/>
-        <stop offset="88%" stop-color="#34D399" stop-opacity=".45"/>
-        <stop offset="100%" stop-color="#34D399" stop-opacity="0"/>
-      </linearGradient>
-    </defs>
-
-    <g class="sm-scene">
-      <!-- Subtle outer edge horizon fades (no lines crossing behind card text) -->
-      <path class="sm-wave" style="stroke:url(#smFadeG)" d="M0 195 H110"/>
-      <path class="sm-wave" style="stroke:url(#smFadeG)" d="M1810 152 H1920"/>
-      <path class="sm-wave" style="stroke:url(#smFadeG)" d="M1810 238 H1920"/>
-      <path class="sm-wave" d="M0 302 C 320 282, 640 318, 960 298 S 1600 282, 1920 304"/>
-
-      <!-- Connector 1 -> 2: OoneClick App to OMMD Gateway -->
-      <path class="sm-rail" d="M360 195 H525"/>
-      <path class="sm-pulse" d="M360 195 H525"/>
-      <circle class="sm-dot" cx="360" cy="195" r="4"/>
-      <circle class="sm-dot" cx="525" cy="195" r="4"/>
-      <path d="M440 189 L447 195 L440 201" fill="none" stroke="var(--mu)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/>
-
-      <!-- Connector 2 -> 3: OMMD Gateway to MultiDrive AMI -->
-      <path class="sm-rail" d="M785 195 H950"/>
-      <path class="sm-pulse d2" d="M785 195 H950"/>
-      <circle class="sm-dot" cx="785" cy="195" r="4"/>
-      <circle class="sm-dot" cx="950" cy="195" r="4"/>
-      <path d="M865 189 L872 195 L865 201" fill="none" stroke="var(--mu)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/>
-
-      <!-- Forked Connectors 3 -> 4: MultiDrive AMI to Connected Smart Meters -->
-      <path class="sm-rail" d="M1210 195 C 1285 195, 1300 152, 1380 152"/>
-      <path class="sm-rail" d="M1210 195 C 1285 195, 1300 238, 1380 238"/>
-      <path class="sm-pulse d3" d="M1210 195 C 1285 195, 1300 152, 1380 152"/>
-      <path class="sm-pulse d4" d="M1210 195 C 1285 195, 1300 238, 1380 238"/>
-      <circle class="sm-dot" cx="1210" cy="195" r="4"/>
-      <circle cx="1380" cy="152" r="4" fill="#34D399"/>
-      <circle cx="1380" cy="238" r="4" fill="#2DD4E6"/>
-
-      <!-- Column 1: OoneClick Mobile App -->
-      <g>
-        <rect class="sm-card" x="110" y="124" width="250" height="142" rx="20"/>
-        <rect class="sm-subcard" x="130" y="143" width="50" height="98" rx="11"/>
-        <rect x="135" y="149" width="40" height="18" rx="5" fill="#4F46E5"/>
-        <circle cx="168" cy="158" r="2.6" fill="#34D399"/>
-        <rect x="136" y="173" width="38" height="10" rx="3" fill="var(--pb)"/>
-        <rect x="136" y="188" width="28" height="8" rx="3" fill="var(--pb)" opacity=".8"/>
-        <rect x="136" y="218" width="38" height="13" rx="4" fill="#2563EB" opacity=".88"/>
-        <text class="sm-t" x="196" y="168">OoneClick</text>
-        <text class="sm-sub" x="196" y="191">Mobile App</text>
-        <rect class="sm-badge-pri" x="196" y="210" width="118" height="24" rx="8"/>
-        <text class="sm-tx-pri" x="206" y="226">V.2.2.12 · OMMD</text>
-      </g>
-
-      <!-- Column 2: OMMD Gateway Core -->
-      <g>
-        <rect class="sm-card" x="525" y="124" width="260" height="142" rx="20"/>
-        <rect class="sm-badge-cy" x="545" y="145" width="54" height="54" rx="14"/>
-        <rect x="559" y="159" width="26" height="26" rx="6" fill="none" stroke="var(--cy)" stroke-width="2"/>
-        <rect x="566" y="166" width="12" height="12" rx="2" fill="var(--cy)" opacity=".85"/>
-        <path d="M566 154v5M578 154v5M566 185v5M578 185v5M554 166h5M554 178h5M585 166h5M585 178h5" stroke="var(--cy)" stroke-width="1.8" stroke-linecap="round"/>
-        <text class="sm-t" x="615" y="168">OMMD</text>
-        <text class="sm-sub" x="615" y="191">Meter Gateway</text>
-        <!-- Mini TOU Load Profile interval bars -->
-        <rect class="sm-subcard" x="545" y="212" width="220" height="34" rx="10"/>
-        <rect x="559" y="227" width="8" height="12" rx="2.5" fill="#8B74FF" opacity=".75"/>
-        <rect x="571" y="222" width="8" height="17" rx="2.5" fill="#8B74FF"/>
-        <rect x="583" y="219" width="8" height="20" rx="2.5" fill="#2DD4E6"/>
-        <rect x="595" y="224" width="8" height="15" rx="2.5" fill="#34D399"/>
-        <text class="sm-mono" x="615" y="233">Wh / varh · TOU Sync</text>
-      </g>
-
-      <!-- Column 3: MultiDrive AMI Head-End -->
-      <g>
-        <rect class="sm-card" x="950" y="124" width="260" height="142" rx="20"/>
-        <rect class="sm-badge-grn" x="970" y="145" width="54" height="54" rx="14"/>
-        <rect x="981" y="156" width="32" height="13" rx="3.5" fill="none" stroke="var(--grn)" stroke-width="2"/>
-        <rect x="981" y="175" width="32" height="13" rx="3.5" fill="none" stroke="var(--grn)" stroke-width="2"/>
-        <circle cx="988" cy="162.5" r="2" fill="var(--grn)"/>
-        <circle cx="988" cy="181.5" r="2" fill="var(--grn)"/>
-        <text class="sm-t" x="1040" y="168">MultiDrive</text>
-        <text class="sm-sub" x="1040" y="191">AMI Head-End</text>
-        <rect class="sm-badge-grn" x="1040" y="210" width="148" height="24" rx="8"/>
-        <text class="sm-mono" x="1050" y="226" style="fill:var(--grn)">Ping · Provision</text>
-      </g>
-
-      <!-- Column 4: Connected Smart Meters (replacing transmission towers) -->
-      <g>
-        <!-- Top Smart Meter Card -->
-        <rect class="sm-card" x="1380" y="120" width="430" height="64" rx="16"/>
-        <rect class="sm-subcard" x="1394" y="131" width="42" height="42" rx="11"/>
-        <!-- Smart meter digital LCD emblem -->
-        <rect x="1403" y="138" width="24" height="15" rx="3" fill="#0F172A" stroke="var(--cy)" stroke-width="1.2"/>
-        <path d="M1407 146h16" stroke="#2DD4E6" stroke-width="1.6" stroke-linecap="round"/>
-        <path d="M1408 160v7M1415 160v7M1422 160v7" stroke="var(--mu)" stroke-width="1.6" stroke-linecap="round"/>
-        <text class="sm-t-sm" x="1450" y="147">TOU Smart Meter · 218261260</text>
-        <text class="sm-mono" x="1450" y="167">PLANT EDC218261260 · Exec 62092</text>
-        <rect class="sm-badge-grn" x="1700" y="140" width="96" height="24" rx="12"/>
-        <text class="sm-tx-grn" x="1748" y="156" text-anchor="middle">Verified</text>
-
-        <!-- Bottom Smart Meter Card -->
-        <rect class="sm-card" x="1380" y="206" width="430" height="64" rx="16"/>
-        <rect class="sm-subcard" x="1394" y="217" width="42" height="42" rx="11"/>
-        <!-- Meter telemetry pulse emblem -->
-        <rect x="1403" y="224" width="24" height="15" rx="3" fill="#0F172A" stroke="var(--pri)" stroke-width="1.2"/>
-        <path d="M1407 232l4-3 3 5 4-4 4 2" fill="none" stroke="#8B74FF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M1408 246v7M1415 246v7M1422 246v7" stroke="var(--mu)" stroke-width="1.6" stroke-linecap="round"/>
-        <text class="sm-t-sm" x="1450" y="233">Field Meter Grid · 218261282</text>
-        <text class="sm-mono" x="1450" y="253">158,400.00 Wh · Exec 56840</text>
-        <rect class="sm-badge-cy" x="1700" y="226" width="96" height="24" rx="12"/>
-        <text class="sm-tx-cy" x="1748" y="242" text-anchor="middle">Live Sync</text>
-      </g>
-    </g>
-  </svg>
   <div class="ty-wrap">
     <div class="ty-main">
       <span class="logo a" style="--d:0" role="img" aria-label="OONE Power Technology"></span>
